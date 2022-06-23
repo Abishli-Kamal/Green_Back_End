@@ -1,0 +1,258 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+#headerTop .email,
+#headerTop .phone {
+  margin-top: 2%;
+}
+
+#headerTop .email i,
+#headerTop .phone i {
+  margin-top: 3px;
+  color: green;
+}
+
+#headerTop .email a,
+#headerTop .phone a {
+  color: black;
+  margin-left: 4px;
+  text-decoration: none;
+}
+
+#headerTop .email a:hover,
+#headerTop .phone a:hover {
+  color: green;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#headerTop .icons {
+  margin-top: 1%;
+}
+
+#headerTop .icons ul li {
+  list-style: none;
+}
+
+#headerTop .icons ul li a i {
+  font-size: 15px;
+  color: black;
+}
+
+#headerTop .icons ul li a i:hover {
+  color: green;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+header #headerBottom {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
+  margin-top: 1%;
+}
+
+header #headerBottom .logo a {
+  text-decoration: none;
+}
+
+header #headerBottom .logo a h3 {
+  color: green;
+}
+
+header #headerBottom .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+header #headerBottom .navbar ul li {
+  list-style: none;
+}
+
+header #headerBottom .navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header #headerBottom .navbar ul li a:hover {
+  color: green;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main #sliders .slider .carousel-item {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #sliders .slider .carousel-item .slider-text {
+  position: absolute;
+  bottom: 50%;
+}
+
+main #sliders .slider .carousel-item .slider-text h2 {
+  font-size: 50px;
+}
+
+main #Cards {
+  margin-top: 3%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #Cards .cardone:hover h4 {
+  color: #5cb874;
+}
+
+main #Cards .cardone i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #5cb874;
+}
+
+main #Cards .cardone h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+main #Cards .cardone p {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+main #about {
+  margin-top: 3%;
+}
+
+main #about .title h2 {
+  color: #444444;
+}
+
+main #about .title p {
+  color: grey;
+}
+
+main #services {
+  margin-top: 5%;
+  background-color: whitesmoke;
+}
+
+main #services .title {
+  width: 90%;
+}
+
+main #services .title p {
+  color: #919191;
+}
+
+main #services .card {
+  border: 0;
+  background-color: white;
+  height: 30vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+main #services .card i {
+  font-size: 40px;
+  color: #47aeff;
+}
+
+main #services .card h4 {
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+main #services .card p {
+  font-size: 14px;
+}
+
+main #contact {
+  margin-top: 3%;
+}
+
+main #contact .adress {
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+}
+
+main #contact .form-action {
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+}
+
+main #contact .contactE {
+  margin-top: 5%;
+}
+
+main #contact .contactE .icon {
+  background-color: #eaf6ed;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #contact .contactE .icon i {
+  color: green;
+}
+
+main #contact .contactE .icon:hover {
+  background-color: #5cb874;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main #contact .contactE .icon:hover i {
+  color: white;
+}
+
+footer {
+  margin-top: 4%;
+}
+
+footer #footerEnd {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

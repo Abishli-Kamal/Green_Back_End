@@ -1,0 +1,222 @@
+﻿@using Green_Back_End.Models
+@using Green_Back_End.View_models
+@model HomeVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <section id="sliders">
+        <div class="slider">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    @foreach (Slider slider in Model.Sliders)
+                    {
+                        <div class="carousel-item active">
+                            <img style="height: 70vh;" src="~/assets/img/@slider.Image" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block slider-text">
+                                <h2>@slider.Title</h2>
+                                <p>@slider.SubTitle</p>
+                                <button class="btn btn-success">Read More</button>
+                            </div>
+
+                        </div>
+                    }
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="Cards">
+        <div class="container">
+            <div class="row">
+                @foreach (CardOne card in Model.CardOnes)
+               {
+                   <div class="col-lg-4 cardone">
+                    <i class="@card.Icon"></i>
+                    <h4>@card.Title</h4>
+                    <p>
+                       @card.SubTitle
+                    </p>
+                </div>
+               }
+                
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="conatiner">
+            <div class="row w-100">
+                <div class="title col-lg-12 text-center">
+                    <h2>ABOUT US</h2>
+                    <p>
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea.<br /> Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="col-lg-5 mx-5">
+                        <h2>@Model.Abouts.Title</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                            pariatur.
+                        </p>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="w-100" src="~/assets/img/@Model.Abouts.Image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="title col-lg-12 text-center">
+                    <h2>SERVICES</h2>
+                    <p>
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+                @foreach (Servis servis in Model.Services)
+               {
+                   <div class="col-lg-3 card">
+                    <div class="icon">
+                        <i class="@servis.Icon"></i>
+                    </div>
+
+                    <h4>@servis.Title</h4>
+                    <p>@servis.SubTitle</p>
+                </div>
+               }
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row w-100">
+                <div class="title col-lg-12 text-center">
+                    <h2>CONTACT</h2>
+                    <p>
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+                <div class="row justify-content-between ">
+
+                    <div class="col-lg-4 adress">
+                        <div class="contactE d-flex justify-content-around w-75">
+                            <div class="icon rounded-circle">
+                                <i class="fa-solid fa-location-pin"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Location:</h4>
+                                <p>A108 Adam Street</p>
+                            </div>
+                        </div>
+                        <div class="contactE d-flex justify-content-around w-75">
+                            <div class="icon rounded-circle">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Email:</h4>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contactE d-flex justify-content-around w-75">
+                            <div class="icon rounded-circle">
+                                <i class="fa-solid fa-mobile"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Call:</h4>
+                                <p>+1 5589 55488 55s</p>
+                            </div>
+                        </div>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48651.19210597089!2d49.86139694478313!3d40.349011515055835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1655908082817!5m2!1sen!2s"
+                                    width="95%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 form-action">
+
+                        <form class="mt-4">
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="form3Example1">Your name</label>
+                                        <input type="text" id="form3Example1" class="form-control" />
+
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="form3Example2">Your Email</label>
+                                        <input type="email" id="form3Example2" class="form-control" />
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3">Subject</label>
+                                <input type="text" id="form3Example3" class="form-control" />
+
+                            </div>
+                            <textarea class="mt-3 col-lg-12" name="" id="" cols="50" rows="10"></textarea>
+
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn btn-success  btn-block mb-4">Send Message</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+

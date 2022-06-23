@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: whitesmoke;
+}
+#headerTop {
+    .email,
+    .phone {
+        margin-top: 2%;
+        i {
+            margin-top: 3px;
+            color: green;
+        }
+        a {
+            color: black;
+            margin-left: 4px;
+            text-decoration: none;
+            &:hover {
+                color: green;
+                transition: 0.5s;
+            }
+        }
+    }
+    .icons {
+        margin-top: 1%;
+        ul {
+            li {
+                list-style: none;
+                a {
+                    i {
+                        font-size: 15px;
+                        color: black;
+                        &:hover {
+                            color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+header {
+   position:sticky;
+   top: 0;
+   background-color: white;
+   z-index: 1;
+  
+    #headerBottom {
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 1;
+       
+        margin-top: 1%;
+        .logo {
+            a {
+                text-decoration: none;
+                h3 {
+                    color: green;
+                }
+            }
+        }
+        .navbar {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                            color: green;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+main {
+    #sliders {
+        .slider {
+            .carousel-item {
+                position: relative;
+                align-items: center;
+                .slider-text {
+                    position: absolute;
+                    bottom: 50%;
+                    h2 {
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+    #Cards {
+        margin-top: 3%;
+        justify-content: space-around;
+        .cardone {
+            &:hover {
+                h4 {
+                    color: #5cb874;
+                }
+            }
+            i {
+                font-size: 40px;
+                margin-bottom: 15px;
+                color: #5cb874;
+            }
+            h4 {
+                font-size: 20px;
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+            p {
+                font-size: 17px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    #about {
+        margin-top: 3%;
+        .title {
+            h2 {
+                color: #444444;
+            }
+
+            p {
+                color: grey;
+            }
+        }
+    }
+    #services {
+        margin-top: 5%;
+        background-color: whitesmoke;
+        .title {
+            width: 90%;
+            p {
+                color: #919191;
+            }
+        }
+        .card {
+            border: 0;
+            background-color: white;
+            height: 30vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 3%;
+            margin-top: 3%;
+
+            i {
+                font-size: 40px;
+                color: #47aeff;
+            }
+            h4 {
+                margin-top: 3%;
+                cursor: pointer;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    #contact {
+        margin-top: 3%;
+        .adress {
+            border-top: 3px solid green;
+            border-bottom: 3px solid green;
+        }
+        .form-action {
+            border-top: 3px solid green;
+            border-bottom: 3px solid green;
+        }
+        .contactE {
+            margin-top: 5%;
+            .icon {
+                background-color: #eaf6ed;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    color: green;
+                }
+                &:hover {
+                    background-color: #5cb874;
+                    transition: 0.5s;
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+footer {
+    margin-top: 4%;
+    #footerEnd {
+        background-color: black;
+        color: white;
+    }
+}
