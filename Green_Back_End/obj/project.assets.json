@@ -8630,11 +8630,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Green_Back_End\\Green_Back_End\\Green_Back_End.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Projects_Back_End\\Green_Back_End\\Green_Back_End\\Green_Back_End.csproj",
       "projectName": "Green_Back_End",
-      "projectPath": "C:\\Users\\user\\Desktop\\Green_Back_End\\Green_Back_End\\Green_Back_End.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Projects_Back_End\\Green_Back_End\\Green_Back_End\\Green_Back_End.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Green_Back_End\\Green_Back_End\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Projects_Back_End\\Green_Back_End\\Green_Back_End\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
